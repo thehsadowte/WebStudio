@@ -1,0 +1,38 @@
+/*=============================================
+=                   Utils Styles                   =
+=============================================*/
+@import './utils/_reset.scss';
+@import './utils/_vars.scss';
+@import './utils/_visually-hidden.scss';
+@import './utils/_animations.scss';
+@import './utils/_mixins.scss';
+
+/*=============================================
+=                   Base Styles                   =
+=============================================*/
+
+@import './base/_common.scss';
+@import './base/_container.scss';
+
+/*=============================================
+=                   Components                   =
+=============================================*/
+
+@import './components/_btn.scss';
+@import './components/_logo.scss';
+@import './components/_titles.scss';
+@import './components/_modal.scss';
+@import './components/_backdrop.scss';
+@import './components/_navigation.scss';
+@import './components/_hero.scss';
+@import './components/_caption.scss';
+@import './components/_projects.scss';
+@import './components/_team.scss';
+@import './components/_partners.scss';
+@import './components/_example.scss';
+
+/*=============================================
+=                   Layouts                   =
+=============================================*/
+@import './layouts/_header';
+@import './layouts/_footer.scss';

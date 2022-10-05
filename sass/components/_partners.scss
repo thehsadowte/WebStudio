@@ -1,0 +1,58 @@
+/* **** Our Partners  */
+
+.partners {
+  display: inline-flex;
+  list-style-type: none;
+}
+
+/* .partners */
+
+.partners .item {
+  width: 170px;
+  height: 92px;
+}
+
+/* .partners .item */
+
+.partners .item + .item {
+  margin-left: 30px;
+}
+
+/* .partners .item+.item */
+
+.partners .partners__link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: var(--icons-color);
+  border: 1px solid var(--icons-color);
+  border-radius: 4px;
+}
+
+/* .partners .partners-link */
+
+.partners .partners__link > .icon {
+  fill: currentColor;
+
+  transition: color 250ms linear, fill 250ms ease-in, border 250ms linear;
+}
+
+/* .partners .partners-link>.icon */
+
+.partners .icon {
+  height: 60px;
+  width: 106px;
+}
+
+/* .partners .icon */
+
+.partners__link:hover,
+.partners__link:focus {
+  color: var(--accent-text-color);
+  fill: var(--accent-text-color);
+  border: 1px solid var(--accent-text-color);
+}
+
+/* .partners-link:focus */

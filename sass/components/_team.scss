@@ -1,0 +1,140 @@
+/* Our Team and social media */
+
+.team__container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--bg-color);
+}
+
+/* .team-container */
+
+.team {
+  background-color: var(--added-bg-color);
+}
+
+/* .team */
+
+.team__title {
+  color: var(--title-text-color);
+  /* font-size: 16px; */
+  line-height: 1.18;
+  font-weight: 500;
+}
+
+/* .team-title */
+
+.team__list {
+  display: flex;
+}
+
+/* .team-list */
+
+.team__list .item + .item {
+  margin-left: 30px;
+}
+
+/* .team-list .item+.item */
+
+.team__list > .item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--bg-color);
+}
+
+/* .team-list>.item */
+
+.team__list img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 0;
+}
+
+/* .team-list img */
+
+.team__list .team__title {
+  margin-bottom: 10px;
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+/* .team-list .team-title */
+
+.team__list .caption__text {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+/* .team-list .caption-text */
+
+.social-wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  /* margin-left: auto;
+  margin-right: auto; */
+  padding: 0;
+  flex-grow: inherit;
+  padding-top: 15px;
+}
+
+/* .social-m */
+
+.icon {
+  height: 44px;
+  width: 44px;
+}
+
+/* .icon */
+
+.team__social .link .icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* .team-social .link .icon */
+
+.team__social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+}
+
+/* .team-social */
+
+.team__social .link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  color: var(--icons-color);
+  background-color: transparent;
+
+  transition: color 250ms linear, fill 250ms ease-in, background-color 250ms linear;
+
+  &:hover,
+  &:focus,
+  .icon:hover {
+    color: var(--bg-color);
+    fill: var(--accent-text-color);
+    background-color: var(--accent-text-color);
+  }
+}
+
+.team__social .item + .item {
+  margin-left: 10px;
+}
+
+/* .team-social .item+.item */
