@@ -182,6 +182,11 @@ ul {
   padding: 48px 40px;
 }
 
+.menu__item.menu-link {
+  display: inline-block;
+  margin-bottom: 32px;
+}
+
 .mobile-contacts {
   margin-bottom: 64px;
 }
@@ -191,16 +196,21 @@ ul {
   text-decoration: none;
   color: var(--accent-text-color);
   font-size: 40px;
+  margin-bottom: 32px;
 }
 
 .contacts-link-email {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   font-family: "Roboto";
   font-size: 24px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #757575;
-  margin-bottom: 64px;
+  margin-top: 32px;
+  text-decoration: none;
 }
 
 .social-link {
@@ -212,6 +222,19 @@ ul {
   list-style: none;
   text-decoration: none;
   color: var(--accent-text-color);
+  position: relative;
+}
+
+.social-link::after {
+  content: "";
+  position: absolute;
+  right: -21px;
+  bottom: 11px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  width: 22px;
+  height: 1px;
+  background-color: rgba(33, 33, 33, 0.2);
 }
 
 .menu-link {
@@ -233,6 +256,13 @@ ul {
   position: absolute;
   top: 10px;
   right: 15px;
+}
+.js-close-menu.menu-link {
+  display: block;
+}
+
+.js-close-menu.menu-link {
+  margin-bottom: 36px;
 }
 
 .js-open-menu {
@@ -410,13 +440,23 @@ ul {
 
 .section__title {
   font-family: "Roboto";
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
   color: var(--title-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .section__title {
+    font-family: "Roboto";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
 }
 
 .caption__title {
@@ -955,9 +995,9 @@ ul {
   color: var(--bg-color);
   text-transform: uppercase;
   font-style: normal;
-  margin-bottom: 30px;
   max-width: 360px;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .hero__title {
@@ -1788,7 +1828,7 @@ ul {
   padding-left: 16px;
   font-family: inherit;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.25;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));

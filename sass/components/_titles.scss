@@ -1,7 +1,12 @@
 .section__title {
-  @include font('Roboto', 36px, 700, 1.16, 0.03em);
+  @include font('Roboto', 28px, 700, 1.17, 0.03em);
 
-  margin-bottom: 50px;
+  @media screen and (min-width: 1200px) {
+    @include font('Roboto', 36px, 700, 1.16, 0.03em);
+    text-align: center;
+  }
+
+  margin-bottom: 30px;
   text-align: center;
   color: var(--title-text-color);
 }
