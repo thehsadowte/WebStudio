@@ -1,29 +1,40 @@
 .hero {
-  background: var(--hero- bg-color);
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
-}
+  background: var(--hero-bg-color);
 
-/* .hero */
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
 
 .hero__title {
+  @include font('Roboto', 26px, 900, 1.6, 0.06em);
   color: var(--bg-color);
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
+
   text-transform: uppercase;
   font-style: normal;
-  margin: 0 auto;
   margin-bottom: 30px;
-  width: 696px;
+
+  max-width: 360px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font('Roboto', 44px, 900, 1.36, 0.06em);
+    max-width: 696px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+  }
 }
 
-/* .hero-title */
-
 .hero__overlay {
-  height: 600px;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -33,9 +44,11 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
 
-/* .overlay */
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+  }
+}
 
 .hero__btn {
   font-family: 'Roboto';

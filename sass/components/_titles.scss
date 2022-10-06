@@ -9,9 +9,15 @@
 .caption__title {
   @include font('Roboto', 14px, 700, 1.18, 0.03em);
 
+  text-align: center;
+
   margin-bottom: 10px;
 
   color: var(--title-text-color);
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 
 .team__title {

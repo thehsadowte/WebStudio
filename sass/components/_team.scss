@@ -1,37 +1,58 @@
 /* Our Team and social media */
 
 .team__container {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  // padding-top: 30px;
+  // padding-bottom: 30px;
   background-color: var(--bg-color);
-}
+  width: 100%;
 
-/* .team-container */
+  // gap: 30px;
+}
 
 .team {
   background-color: var(--added-bg-color);
 }
 
-/* .team */
-
 .team__title {
   color: var(--title-text-color);
-  /* font-size: 16px; */
+  font-size: 16px;
   line-height: 1.18;
   font-weight: 500;
 }
 
-/* .team-title */
-
 .team__list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-/* .team-list */
+.team__item {
+  display: flex;
+  flex-wrap: wrap;
 
-.team__list .item + .item {
-  margin-left: 30px;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+    // gap: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 30px) / 4);
+    // gap: 30px;
+  }
 }
+
+// .team__item {
+//   margin-bottom: 30px;
+// }
+
+// .team__list .item {
+//   margin-bottom: 30px;
+// }
+// .team__list .item + .item {
+//   margin-left: 30px;
+// }
 
 /* .team-list .item+.item */
 
@@ -45,13 +66,11 @@
 /* .team-list>.item */
 
 .team__list img {
-  display: block;
+  display: flex;
   width: 100%;
   height: auto;
   margin-bottom: 0;
 }
-
-/* .team-list img */
 
 .team__list .team__title {
   margin-bottom: 10px;
@@ -63,6 +82,13 @@
 }
 
 /* .team-list .team-title */
+
+// .caption__text {
+//   color: var(--third-color);
+//   line-height: 1.7;
+//   font-size: 14px;
+//   font-weight: 400;
+// }
 
 .team__list .caption__text {
   font-size: 16px;
@@ -106,6 +132,8 @@
   align-items: center;
   justify-content: center;
   list-style-type: none;
+
+  padding-top: 16px;
 }
 
 /* .team-social */
@@ -133,8 +161,18 @@
   }
 }
 
-.team__social .item + .item {
-  margin-left: 10px;
-}
+// @media only screen and (min-width: 1200px) {
+//   .team__list .item {
+//     margin-bottom: 30px;
+//   }
+// }
+
+// //   .team__social .item + .item {
+// //     margin-left: 10px;
+// //   }
+// // }
+// .team__social .item + .item {
+//   margin-left: 10px;
+// }
 
 /* .team-social .item+.item */
