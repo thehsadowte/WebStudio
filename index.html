@@ -22,11 +22,20 @@
     <!-- <link rel="stylesheet" href="css/styles.css" /> -->
   </head>
   <body class="page">
-    <!-- <header class="page__header border-bottom">
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <header class="page__header border-bottom">
       <nav class="navigation container">
-        <a href="./index.html" class="logo"
-          ><span class="logo__accent">Web</span>Studio</a
-        >
+        <a href="./index.html" class="logo"><span class="logo__accent">Web</span>Studio</a>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu-icon">
+            <use href="./images/sprite1.svg#icon-menu"></use>
+          </svg>
+        </button>
         <ul class="navigation__list list">
           <li class="item">
             <a href="./index.html" class="link current">Студія</a>
@@ -57,7 +66,7 @@
           </li>
         </ul>
       </nav>
-    </header> -->
+    </header>
     <main>
       <section class="hero hero__overlay">
         <div class="container">
@@ -526,6 +535,7 @@
         </div>
       </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

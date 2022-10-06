@@ -6,6 +6,10 @@
 }
 
 .navigation__list {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
   display: flex;
   margin-left: 93px;
 }
@@ -13,6 +17,10 @@
 /* .site-nav */
 
 .navigation__auth {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
   color: var(--third-color);
   font-weight: 500;
   font-size: 14px;
