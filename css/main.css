@@ -176,6 +176,19 @@ ul {
   padding: 48px 40px;
 }
 
+.menu-link {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+.menu-link:hover, .menu-link:focus, .menu-link:active {
+  cursor: pointer;
+  color: var(--accent-text-color);
+}
+
 .js-close-menu {
   position: absolute;
   top: 10px;

@@ -52,6 +52,15 @@
 }
 
 .menu-link {
+  text-decoration: none;
+  @include font('Roboto', 40px, 500, 1.17, 0.02em);
+
+  &:hover,
+  &:focus,
+  &:active {
+    cursor: pointer;
+    color: var(--accent-text-color);
+  }
 }
 
 .js-close-menu {
