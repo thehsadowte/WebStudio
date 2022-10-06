@@ -176,13 +176,27 @@ ul {
   padding: 48px 40px;
 }
 
-.menu-link {
+.contacts-link {
+  list-style: none;
   text-decoration: none;
+}
+
+.social-link {
+  list-style: none;
+  text-decoration: none;
+}
+
+.menu-link {
   font-family: "Roboto";
   font-size: 40px;
   font-weight: 500;
   line-height: 1.17;
   letter-spacing: 0.02em;
+  color: --title-text-color;
+  margin-left: 40px;
+  margin-top: 48px;
+  list-style: none;
+  text-decoration: none;
 }
 .menu-link:hover, .menu-link:focus, .menu-link:active {
   cursor: pointer;

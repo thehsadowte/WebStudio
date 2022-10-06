@@ -44,17 +44,23 @@
 .mobile-menu {
   //   display: none;
 }
-.mobile-contacts {
-  //   display: none;
+.contacts-link {
+  list-style: none;
+  text-decoration: none;
 }
-.mobile-social {
-  //   display: none;
+.social-link {
+  list-style: none;
+  text-decoration: none;
 }
 
 .menu-link {
-  text-decoration: none;
   @include font('Roboto', 40px, 500, 1.17, 0.02em);
+  color: (--title-text-color);
+  margin-left: 40px;
+  margin-top: 48px;
 
+  list-style: none;
+  text-decoration: none;
   &:hover,
   &:focus,
   &:active {
