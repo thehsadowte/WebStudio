@@ -6,6 +6,10 @@
   text-align: center;
 }
 
+.contacts {
+  margin-bottom: 60px;
+}
+
 /* .wrapper */
 
 .logo__white {
@@ -196,9 +200,10 @@
 =============================================*/
 
 .subscribe {
-  display: block;
-  margin-left: 93px;
+  // display: block;
+  // margin-left: 93px;
   /* position: relative; */
+  margin-bottom: 60px;
 }
 
 .subscribe__title {
@@ -211,7 +216,7 @@
 }
 
 .subscribe__email {
-  width: 358px;
+  max-width: 358px;
   /* width: 100%; */
   padding-top: 15px;
   padding-bottom: 15px;
@@ -234,8 +239,8 @@
 }
 
 .subscribe__btn {
-  position: absolute;
-  display: inline-flex;
+  // position: absolute;
+  // display: inline-flex;
   justify-content: center;
   align-items: center;
   margin-left: 12px;
@@ -269,4 +274,8 @@
   }
 }
 
+.subscribe__wrapper {
+  display: flex;
+  flex-direction: column;
+}
 /*============  End of Subscribe  =============*/
