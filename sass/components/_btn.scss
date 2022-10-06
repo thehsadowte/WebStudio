@@ -43,17 +43,13 @@
 
 .example__btn-list {
   display: flex;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  column-gap: 8px;
   justify-content: center;
+
+  margin-bottom: 40px;
 }
-
-/* .buttons-list */
-
-.example__btn-list .item + .item {
-  margin-left: 8px;
-}
-
-/* .buttons-list .item+.item */
 
 .example__btn.active {
   background-color: var(--accent-text-color);

@@ -23,7 +23,8 @@
   //   position: fixed;
   display: none;
   &.is-open {
-    display: block;
+    display: flex;
+    flex-direction: column;
     position: fixed;
     top: 0;
     left: 0;
@@ -47,7 +48,13 @@
 .contacts-link {
   list-style: none;
   text-decoration: none;
+  color: var(--accent-text-color);
+  font-size: 40px;
 }
+.contacts-link-email {
+  color: #757575;
+}
+
 .social-link {
   list-style: none;
   text-decoration: none;
@@ -55,9 +62,9 @@
 
 .menu-link {
   @include font('Roboto', 40px, 500, 1.17, 0.02em);
-  color: (--title-text-color);
-  margin-left: 40px;
-  margin-top: 48px;
+  color: #212121;
+  //   margin-left: 40px;
+  //   margin-top: 48px;
 
   list-style: none;
   text-decoration: none;
@@ -80,4 +87,12 @@
   @media screen and (max-width: 767px) {
     display: block;
   }
+}
+
+.bottom-container {
+  margin-top: auto;
+}
+
+.mobile-social {
+  display: flex;
 }
