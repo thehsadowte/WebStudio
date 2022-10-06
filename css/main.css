@@ -1344,8 +1344,8 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .contacts {
-    -ms-flex-preferred-size: calc((100% - 60px) / 2);
-        flex-basis: calc((100% - 60px) / 2);
+    -ms-flex-preferred-size: calc(50% - 30px);
+        flex-basis: calc(50% - 30px);
   }
 }
 
@@ -1399,8 +1399,8 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .social {
-    -ms-flex-preferred-size: calc((100% - 60px) / 2);
-        flex-basis: calc((100% - 60px) / 2);
+    -ms-flex-preferred-size: calc(50% - 30px);
+        flex-basis: calc(50% - 30px);
   }
 }
 
