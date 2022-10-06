@@ -4,10 +4,20 @@
   // display: flex;
   // align-items: baseline;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
 }
 
 .contacts {
   margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 2);
+  }
 }
 
 /* .wrapper */
@@ -63,7 +73,12 @@
 /* .address-list .phone */
 
 .social {
-  margin-left: 70px;
+  // margin-left: 70px;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 2);
+  }
 }
 
 /* .social */
@@ -239,6 +254,7 @@
 }
 
 .subscribe__btn {
+  display: block;
   // position: absolute;
   // display: inline-flex;
   justify-content: center;
@@ -277,5 +293,8 @@
 .subscribe__wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 /*============  End of Subscribe  =============*/
