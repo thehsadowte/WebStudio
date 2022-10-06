@@ -227,6 +227,17 @@
   // margin-left: 93px;
   /* position: relative; */
   margin-bottom: 60px;
+
+  width: 450px;
+}
+
+.subscribe__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 450px;
 }
 
 .subscribe__title {
@@ -239,8 +250,8 @@
 }
 
 .subscribe__email {
-  max-width: 358px;
-  /* width: 100%; */
+  max-width: 450px;
+  width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -255,8 +266,8 @@
   border-radius: 4px;
   background-color: transparent;
 
-  @media screen and (min-width: 768px) {
-    width: 450px;
+  @media screen and (min-width: 1200px) {
+    width: 358px;
   }
 }
 
@@ -302,11 +313,4 @@
   }
 }
 
-.subscribe__wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
 /*============  End of Subscribe  =============*/

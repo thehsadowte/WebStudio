@@ -28,6 +28,7 @@
 
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 
   // @media screen and (max-width: 768px) {
   //   display: flex;
@@ -116,4 +117,8 @@
 .navigation__auth .link > .mail-icon {
   margin-right: 10px;
   fill: currentColor;
+}
+
+.navigation__auth.link:not:last-child {
+  margin-bottom: 10px;
 }

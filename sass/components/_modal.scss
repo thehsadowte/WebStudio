@@ -1,7 +1,11 @@
 .modal {
   position: absolute;
   padding: 40px;
-  width: 528px;
+
+  max-width: 450px;
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
   min-height: 581px;
   top: 50%;
   left: 50%;
@@ -103,11 +107,14 @@
   font-weight: 700;
   line-height: calc(23 / 20);
   letter-spacing: 0.03em;
-  white-space: nowrap;
   margin-right: auto;
   margin-left: auto;
 
   color: #212121;
+
+  @media screen and (min-width: 1200px) {
+    white-space: nowrap;
+  }
 }
 
 .modal__label {
@@ -212,12 +219,16 @@
 }
 
 .agreement__text {
-  font-size: 14px;
+  font-size: 12px;
   line-height: calc(24px / 14px);
   font-weight: 400;
   color: var(--third-color);
 
   user-select: none;
+  @media screen and(min-width:1200px) {
+    font-size: 14px;
+    line-height: 1.16;
+  }
 }
 
 .agreement__link {
