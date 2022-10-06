@@ -42,8 +42,8 @@
   height: 100%;
 }
 
-.mobile-menu {
-  //   display: none;
+.mobile-contacts {
+  margin-bottom: 64px;
 }
 .contacts-link {
   list-style: none;
@@ -52,12 +52,16 @@
   font-size: 40px;
 }
 .contacts-link-email {
+  @include font('Roboto', 24px, 500, 1.2, 0.02em);
   color: #757575;
+  margin-bottom: 64px;
 }
 
 .social-link {
+  @include font('Roboto', 18px, 500, 1.14, 0.02em);
   list-style: none;
   text-decoration: none;
+  color: var(--accent-text-color);
 }
 
 .menu-link {
@@ -95,4 +99,5 @@
 
 .mobile-social {
   display: flex;
+  justify-content: space-between;
 }
