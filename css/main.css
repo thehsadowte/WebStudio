@@ -11,6 +11,10 @@ ul {
 }
 
 /* ul */
+ul {
+  list-style: none;
+}
+
 .list {
   list-style: none;
   text-decoration: none;
@@ -145,7 +149,22 @@ ul {
 }
 
 .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 60px;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  width: 100%;
+  height: 100%;
 }
 
 .hero__btn {
