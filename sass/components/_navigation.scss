@@ -1,52 +1,61 @@
 .navigation {
   display: flex;
   align-items: center;
-  justify-content: center;
-  // margin-left: auto;
-  // margin-right: auto;
-  height: 80px;
+  justify-content: space-between;
+
+  height: 60px;
+
+  @media screen and(min-width: 768px) {
+    height: 80px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: flex-start;
+  }
 }
 
 .navigation__list {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
-
+  width: 283px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   @media screen and (min-width: 1200px) {
-    margin-left: 93px;
+    margin-left: 92px;
+    margin-right: 315px;
   }
 }
 
 .navigation__auth {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 
-  // @media screen and (max-width: 768px) {
-  //   display: flex;
-  //   flex-direction: column;
-  // }
+  padding-top: 21px;
+  padding-bottom: 21px;
+
   color: var(--third-color);
   font-weight: 500;
   font-size: 14px;
-  // display: flex;
-  margin-left: auto;
-}
-
-.navigation__list .item + .item,
-.navigation__auth .item + .item {
   @media screen and (min-width: 1200px) {
-    margin-left: 50px;
+    flex-direction: row;
+    gap: 30px;
+    // margin-left: auto;
   }
 }
+
+// .navigation__list .item + .item,
+// .navigation__auth .item + .item {
+//   @media screen and (min-width: 1200px) {
+//     margin-left: 50px;
+//   }
+// }
 
 .navigation__list .link,
 .navigation__auth .link {
@@ -91,8 +100,6 @@
   fill: var(--accent-text-color);
 }
 
-/* .auth-nav .icon:hover */
-
 .link.current::after {
   content: '';
   position: absolute;
@@ -102,23 +109,54 @@
   height: 4px;
   background-color: var(--accent-text-color);
   border-radius: 2px;
+
+  @media only screen and (min-width: 768px) and (max-width: 1199px) {
+    bottom: -32px;
+  }
+}
+
+.navigation__auth.item {
+  display: flex;
+  gap: 10px;
 }
 
 .mail-icon {
   width: 16px;
   height: 12px;
+  margin-right: 8px;
 }
 
 .phone-icon {
   width: 10px;
   height: 16px;
+  margin-right: 8px;
+}
+
+.auth__link {
+  display: block;
+
+  margin-bottom: 10px;
+
+  text-decoration: none;
+  list-style: none;
+  color: var(--third-color);
+
+  font-size: 12px;
+  font-weight: 500;
+  line-height: calc(14 / 12);
+
+  &:hover {
+    fill: var(--accent-text-color);
+    color: var(--accent-text-color);
+  }
 }
 
 .navigation__auth .link > .mail-icon {
-  margin-right: 10px;
+  // margin-right: 10px;
   fill: currentColor;
 }
 
 .navigation__auth.link:not:last-child {
+  display: block;
   margin-bottom: 10px;
 }
