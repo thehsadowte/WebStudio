@@ -745,6 +745,7 @@ ul {
   display: block;
   width: 100%;
   height: auto;
+  max-height: 241.71px;
 }
 
 /* .example-list img */
